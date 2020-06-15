@@ -2,11 +2,18 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button';
+import Menu from './components/Menu';
+import MenuItem from './components/Menu/menuItem';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Menu defaultIndex={0}>
+          <MenuItem>cool Link</MenuItem>
+          <MenuItem>cool Link</MenuItem>
+          <MenuItem>cool Link</MenuItem>
+        </Menu>
         <Button />
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
